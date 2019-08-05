@@ -1,0 +1,57 @@
+{% extends 'base/base.html.twig' %}
+{% block content %}
+        <div class="carousel">
+            <div class="carousel-inner">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item">
+                    <img src="{{ asset('img/img_page_acceuil/home1.jpg') }}">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="{{ asset('img/img_page_acceuil/home3.jpg') }}">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="{{ asset('img/img_page_acceuil/home4.jpg') }}">
+                </div>
+                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                <label for="carousel-2" class="carousel-control next control-1">›</label>
+                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                <label for="carousel-3" class="carousel-control next control-2">›</label>
+                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                <label for="carousel-1" class="carousel-control next control-3">›</label>
+                <ol class="carousel-indicators">
+                    <li>
+                        <label for="carousel-1" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-2" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-3" class="carousel-bullet">•</label>
+                    </li>
+                    <BR>
+                    <button class="favorite styled" type="button">Je loue ma tenue
+                    </button>
+                </ol>
+            </div>
+        </div>
+
+        <div class="bloc_photo_client">
+            <div class="carousel_client">
+                <img src="{{ asset('img/img_page_acceuil/presentation_produit1.jpg') }}">
+            </div>
+            <div class="carousel_client">
+                <img src="{{ asset('img/img_page_acceuil/presentation_produit2.jpg') }}">
+            </div>
+            <div class="carousel_client">
+                <img src="{{ asset('img/img_page_acceuil/presentation_produit3.jpg') }}">
+            </div>
+            <div class="carousel_client">
+                <img src="{{ asset('img/img_page_acceuil/presentation_produit4.jpg') }}">
+            </div>
+            <div class="carousel_client">
+                <img src="{{ asset('img/img_page_acceuil/presentation_produit6.jpg') }}">
+            </div>
+        </div>
+{% endblock %}
