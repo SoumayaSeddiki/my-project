@@ -1,0 +1,15 @@
+{% extends 'base/base.html.twig' %}
+{% block link %}
+    <link rel="stylesheet" href="{{ asset('assets/css/inscription_style.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="formulaire_inscription">
+{#        <h1>S'inscrire</h1>#}
+        <br>
+        <br>
+    <div>
+        {% block fos_user_content %}
+        {% endblock fos_user_content %}
+    </div>
+    </div>
+{% endblock %}

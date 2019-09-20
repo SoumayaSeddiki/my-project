@@ -1,0 +1,16 @@
+{% extends 'base/base.html.twig' %}
+{% block link %}
+    <link rel="stylesheet" href="{{ asset('assets/css/produits_style.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="image_produit">
+    {% for produit in produits %}
+
+
+    <a href="{{ path('article',{'id':produit.id}) }}"><img class="card-img-top" src="{{ asset('img/img_page_produit') }}/{{ produit.filename }}" alt="image"></a>
+    <h4>{{ produit.name }}</h4>
+    {% endfor %}
+    </div>
+
+{% endblock %}

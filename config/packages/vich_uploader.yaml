@@ -1,0 +1,7 @@
+vich_uploader:
+  db_driver: orm
+
+  mappings:
+    product_image:
+      uri_prefix: '/img/img_page_produit'
+      upload_destination: '%kernel.project_dir%/public/img/img_page_produit'

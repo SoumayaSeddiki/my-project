@@ -1,0 +1,9 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{#{% trans_default_domain 'FOSUserBundle' %}#}
+
+{% block fos_user_content %}
+    <script>
+        $(location).attr('href','after');
+    </script>
+{% endblock fos_user_content %}

@@ -1,4 +1,7 @@
 {% extends 'base/base.html.twig' %}
+{% block link %}
+    <link rel="stylesheet" href="{{asset('assets/css/home_style.css')  }}"
+{% endblock %}
 {% block content %}
         <div class="carousel">
             <div class="carousel-inner">
@@ -54,4 +57,97 @@
                 <img src="{{ asset('img/img_page_acceuil/presentation_produit6.jpg') }}">
             </div>
         </div>
+
+
+    <div class="bloc_concept">
+        <div class="triangle_rotate">
+
+        </div>
+        <h2>Comment ça marche</h2>
+        <div class="bloc_icons_concept">
+
+            <div class="bloc_icon_concept">
+                <div class="icon_rond">
+                </div>
+                <br>
+                <div class="icon_text">
+                    <h3>
+                        Je choisie ma tenue et réserve ma date
+                    </h3>
+                    <br>
+                    <p>
+                        La veille pour le lendemain ou 6 mois à l'avance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bloc_icon_concept">
+                <div class="icon_rond">
+                </div>
+                <br>
+                <div class="icon_text">
+                    <h3>
+                        Transport Aller/Retour offert
+                    </h3>
+                    <br>
+                    <p>
+                        Chez moi, au bureau ou en point relais en moins de 24h.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bloc_icon_concept">
+                <div class="icon_rond">
+                </div>
+                <br>
+                <div class="icon_text">
+                    <h3>
+                        Je profite de ma tenue
+                    </h3>
+                    <br>
+                    <br>
+                    <p>
+                        Pendant 4, 8 ou 12 jours.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bloc_icon_concept">
+                <div class="icon_rond">
+                </div>
+                <br>
+                <div class="icon_text">
+                    <h3>
+                        Je renvoie la pièce
+                    </h3>
+                    <br>
+                    <br>
+                    <p>
+                        Avec mon étiquette prépayée
+                    </p>
+                </div>
+            </div>
+
+            <div class="bloc_icon_concept">
+                <div class="icon_rond">
+
+                </div>
+                <br>
+                <div class="icon_text">
+                    <h3>
+                        Le pressing est offert
+                    </h3>
+                    <br>
+                    <br>
+                    <p>
+                        L'équipe s'occupent de tout !
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="patch_concept">
+        <h4><strong><a href="{{ path('concept') }}">Voir le concept</a></strong></h4>
+        </div>
+    </div>
 {% endblock %}

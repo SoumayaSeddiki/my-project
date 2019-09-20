@@ -36,15 +36,20 @@ class ProduitRepository extends ServiceEntityRepository
     }
     */
 
-    /*
-    public function findOneBySomeField($value): ?Produit
+
+    public function findOneByProduit($search)
     {
         return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
+            ->select('p')
+            ->leftJoin('p.categorie', 'categorie')
+            ->addSelect('categorie')
+            ->Where('categorie.id = :cat')
+            ->setParameter('cat', $search)
             ->getQuery()
-            ->getOneOrNullResult()
+            ->getArrayResult()
         ;
     }
-    */
+
+
+
 }

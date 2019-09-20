@@ -1,0 +1,10 @@
+## config/packages/easy_admin.yaml
+#easy_admin:
+#    entities:
+#      Product:
+#        # ...
+#        form:
+#          fields:
+#            - { property: 'imageFile', type: 'image' }
+#        # ...
+#

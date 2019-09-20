@@ -1,3 +1,26 @@
 .formulaire_inscription{
-    margin: 300px 500px;
+    margin: 130px 500px;
+    width: 320px;
+
 }
+
+button{
+    margin-top: 20px;
+    width: 100%;
+}
+
+input{
+    margin-top: 15px;
+    height: 50px;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    color: #575760;
+}
+
+#remember_me{
+    width: 15px;
+    height: 15px;
+}
+

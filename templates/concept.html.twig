@@ -1,0 +1,155 @@
+{% extends 'base/base.html.twig' %}
+{% block link %}
+    <link rel="stylesheet" href="{{asset('assets/css/concept_style.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="intro">
+    <div class="intro_text">
+    <br>
+    <br>
+        <h1>Comment ça marche ?</h1>
+     <br>
+     <br>
+     <br>
+        <p>Depuis quelques temps la mode se fait la belle et
+            nous avec ! Car ne pas posséder la mode c’est rester libre
+            . Libre de choisir une tenue exceptionnelle pour juste un
+            weekend. Libre de tout oser, car on peut tout changer !
+        </p>
+    </div>
+</div>
+<div class="ancre">
+    <a href="#bloc_location">Les locations</a>
+    <a href="#bloc_depot">Les dépôts</a>
+    <a href="#bloc_essayage">Les essayages</a>
+</div>
+
+    <div class="bloc_location">
+        <br>
+        <br>
+        <h3><a id="bloc_location">Les locations</a></h3>
+        <h4>Libre d'être la plus belle</h4>
+    </div>
+    <br>
+    <br>
+        <h3><a id="bloc_depot">Les dépôts</a></h3>
+    <h4>Un service premium pour rentabiliser vos vêtements !</h4>
+    <div class="bloc_depot">
+        <div class="text_depot">
+        <p>
+            <strong>Les modèles sont centralisés dans nos locaux</strong>
+            <br>
+            L’envoi de vos tenues chez nous est à nos frais ;)
+            <br>
+            <br>
+
+            <strong>Nous gérons vos locations</strong>
+            <br>
+            Pas besoin de vous embêter avec les envois, les contacts, le pressing, on s’occupe de tout !
+            <br>
+            <br>
+
+            <strong>Vous touchez 30% des locations</strong>
+            <br>
+            Choisissez de créditer votre cagnotte pour la dépenser sur notre site quand vous voulez ou recevez un virement en fin de mois sur votre compte en banque.
+            <br>
+            <br>
+
+            <strong>Récupérez vos pièces quand vous le désirez</strong>
+            <br>
+            Vous en êtes toujours propriétaire !
+            <br>
+            <br>
+
+            <strong>Un aller-retour offert chaque mois</strong>
+            <br>
+            Une occasion particulière pour laquelle vous voudriez porter une tenue que vous nous avez déposée ? Prévenez-nous ! (Le plus tôt possible !)
+            <br>
+            <br>
+
+            <strong>Contrôle qualité</strong>
+            <br>
+            Pressing, retouches, vos vêtements sont chouchoutés pour qu’ils restent aussi parfaits qu’à leur arrivée !
+            <br>
+            <br>
+
+            <strong>Gestion des accidents</strong>
+            <br>
+            Vous êtes remboursées de la valeur dépréciée de votre pièce.
+        </p>
+        </div>
+        <div class="img_depot">
+            <img src="{{ asset('img/img_page_concept/illu-robe.png') }}">
+        </div>
+    </div>
+
+    <div class="bloc_essayage">
+        <br>
+        <br>
+        <h3><a id="bloc_essayage">Les essayages</a></h3>
+        <h4>Plusieurs solutions s’offrent à vous !</h4>
+
+        <div class="sousbloc_essayage">
+            <div class="sousbloc_essayage1">
+                <div class="img_text_essayage">
+                    <img src="{{ asset('img/img_page_concept/picto-essayage.png') }}">
+                    <br>
+                    <strong>L’offre essayage 24h</strong>
+                    <br>
+                    <br>
+                    <p>
+                        Pour 20 € recevez jusqu’à trois modèles chez vous pour 24h.
+                        <br>
+                        Essayez-les tranquillement et retournez-les nous
+                    </p>
+                </div>
+
+                <div class="img_text_essayage">
+                    <img src="{{ asset('img/img_page_concept/picto-robes.png') }}">
+                    <br>
+                    <strong>Commandez trois pièces, n’en payez qu’une</strong>
+                    <br>
+                    <br>
+                    <p>
+                        Empruntez trois modèles*, faites votre choix chez vous,
+                        <br>
+                        vous êtes remboursée de ceux que vous n’avez pas portés.
+                        <br>
+                        *Hors accessoires
+                    </p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="sousbloc_essayage1">
+                <div class="img_text_essayage">
+                    <img src="{{ asset('img/img_page_concept/picto-mesures.png') }}">
+                    <br>
+                    <strong>Les mesures</strong>
+                    <br>
+                    <br>
+                    <p>
+                        Tous les modèles sont mesurés par nos soins en arrivant chez nous.
+                        <br>
+                        Référez-vous à notre grille de mesures !
+                    </p>
+                </div>
+
+                <div class="img_text_essayage">
+                    <img src="{{ asset('img/img_page_concept/picto-ca-ne-va-pas.png') }}">
+                    <br>
+                    <strong>J’ai commandé et ça ne va pas ?</strong>
+                    <br>
+                    <br>
+                    <p>
+                        Si vous n’avez pas porté un vêtement parce qu’il n’allait pas,
+                        <br>
+                        nous vous remboursons votre commande ( sauf frais de port, 15 € )
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

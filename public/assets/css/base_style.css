@@ -16,23 +16,42 @@ header{
     left: 0;
     Z-index: 1;
 }
+
 main{
     height: 300vh;
 }
+
 footer{
     background-color: #474856;
     height: 20vh;
 }
+
 h1{
     color: #F3EEEB;
     text-align: center;
 }
-ul{
+a h3{
+    color: #FBF4F1;
+}
+
+.bloc_header{
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    color: #F3EEEB;
+    color: #FBF4F1;
+}
+
+a{
+    text-decoration: none;
+    color: #FBF4F1;
+    margin-top: 2px;
+}
+
+a h2{
+    text-decoration: none;
+    color: #FBF4F1;
+    margin-top: 2px;
 }
 
 
@@ -175,12 +194,6 @@ button{
 
 .bloc_photo_client{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 50px;
-
-
     height: 50vh;
 }
 
@@ -190,3 +203,44 @@ button{
 
 }
 
+/*menu burger*/
+
+.menu > li{
+    /*color: #FBF4F1;
+    display: inline-block;*/
+    width: 150%;
+    position: relative;
+}
+
+.menu a {
+    color: #FBF4F1;
+}
+
+
+.menu li:hover, .menu a:hover{
+    color: #9D8F9A;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sousmenu{
+    display:none;
+    position: absolute;
+    width: 100%;
+    background-color: #474856;
+}
+
+a{
+    text-decoration: none;
+}
+
+#list:hover .sousmenu{
+    display: block;
+}
+
+h2{
+    color: white;
+    font-size: 10px;
+}
